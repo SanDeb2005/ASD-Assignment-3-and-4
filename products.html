@@ -1,0 +1,422 @@
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>FashionHub</title>
+
+    <link rel="stylesheet" href="./src/output.css">
+
+</head>
+
+<body class="bg-gray-100 scroll-smooth">
+
+    <!-- NAVBAR -->
+
+    <nav class="bg-gradient-to-r from-pink-500 to-purple-600 text-white shadow-lg sticky top-0 z-50">
+
+        <div class="max-w-7xl mx-auto px-5 py-4 flex justify-between items-center">
+
+            <h1 class="text-3xl font-bold">
+                FashionHub
+            </h1>
+             <ul class="hidden md:flex gap-8 text-lg items-center">
+
+                <li><a href="index.html" class="hover:text-gray-200">Home</a></li>
+                <li><a href="products.html" class="hover:text-gray-200">Products</a></li>
+                <li><a href="contact.html" class="hover:text-gray-200">Contact</a></li>
+                <li><a href="cart.html" class="hover:text-gray-200">Cart</a></li>
+
+                <button class="bg-black px-5 py-2 rounded-xl hover:bg-gray-800" id="darkBtn">
+                    Dark Mode
+                </button>
+
+            </ul>
+
+        </div>
+
+    </nav>
+    <!-- ================= PRODUCT SLIDER ================= -->
+
+        <div class="text-center mb-12">
+
+            <h1 class="text-5xl font-bold text-pink-500">
+                Trending Products
+            </h1>
+
+            <p class="text-gray-600 mt-5 text-lg">
+                Explore our modern fashion collection.
+            </p>
+
+        </div>
+
+<div class="relative overflow-hidden">
+
+    <div id="slider"
+        class="flex gap-8 transition-transform duration-700">
+
+<!-- PRODUCT 1 -->
+
+            <div
+                class="bg-white rounded-2xl shadow-lg p-5 hover:-translate-y-3 hover:shadow-2xl transition duration-500">
+
+                <img src="jac.jpg"
+                    class="rounded-xl w-full h-56 flex-shrink-0 object-cover">
+
+                <h2 class="text-2xl font-bold mt-5 text-gray-800 product1">
+
+                    Stylish Jacket
+
+                </h2>
+
+                <p class="text-gray-600 mt-3 leading-7">
+
+                    Premium winter fashion jacket with modern style.
+
+                </p>
+
+                <div class="flex justify-between items-center mt-6">
+
+                    <h1 class="text-2xl font-bold text-pink-500">
+
+                        ₹1999
+
+                    </h1>
+
+                    <button onclick="buy1()"
+                        class="bg-pink-500 hover:bg-pink-600 text-white px-5 py-2 rounded-lg">
+
+                        Buy Now
+
+                    </button>
+
+                </div>
+
+            </div>
+
+            <!-- PRODUCT 2 -->
+
+            <div
+                class="bg-white rounded-2xl shadow-lg p-5 hover:-translate-y-3 hover:shadow-2xl transition duration-500">
+
+                <img src="ho.jpg"
+                    class="rounded-xl w-full h-56 flex-shrink-0 object-cover">
+
+                <h2 class="text-2xl font-bold mt-5 text-gray-800 product2">
+
+                    Casual Hoodie
+
+                </h2>
+
+                <p class="text-gray-600 mt-3 leading-7">
+
+                    Comfortable and trendy hoodie for daily wear.
+
+                </p>
+
+                <div class="flex justify-between items-center mt-6">
+
+                    <h1 class="text-2xl font-bold text-pink-500">
+
+                        ₹1499
+
+                    </h1>
+
+                    <button onclick="buy2()"
+                        class="bg-black hover:bg-gray-800 text-white px-5 py-2 rounded-lg">
+
+                        Buy Now
+
+                    </button>
+
+                </div>
+
+            </div>
+
+            <!-- PRODUCT 3 -->
+
+            <div
+                class="bg-white rounded-2xl shadow-lg p-5 hover:-translate-y-3 hover:shadow-2xl transition duration-500">
+
+                <img src="sne.jpg"
+                    class="rounded-xl w-full h-56 flex-shrink-0 object-cover">
+
+                <h2 class="text-2xl font-bold mt-5 text-gray-800 product3">
+
+                    Modern Sneakers
+
+                </h2>
+
+                <p class="text-gray-600 mt-3 leading-7">
+
+                    Stylish sneakers for modern and sporty look.
+
+                </p>
+
+                <div class="flex justify-between items-center mt-6">
+
+                    <h1 class="text-2xl font-bold text-pink-500">
+
+                        ₹2499
+
+                    </h1>
+
+                    <button onclick="buy3()"
+                        class="bg-purple-600 hover:bg-purple-700 text-white px-5 py-2 rounded-lg">
+
+                        Buy Now
+
+                    </button>
+
+                </div>
+
+            </div>
+
+            <!-- PRODUCT 4 -->
+
+            <div
+                class="bg-white rounded-2xl shadow-lg p-5 hover:-translate-y-3 hover:shadow-2xl transition duration-500">
+
+                <img src="t.jpg"
+                    class="rounded-xl w-full h-56 flex-shrink-0 object-cover">
+
+                <h2 class="text-2xl font-bold mt-5 text-gray-800 product4">
+
+                    Fashion T-Shirt
+
+                </h2>
+
+                <p class="text-gray-600 mt-3 leading-7">
+
+                    Soft cotton stylish t-shirt collection.
+
+                </p>
+
+                <div class="flex justify-between items-center mt-6">
+
+                    <h1 class="text-2xl font-bold text-pink-500">
+
+                        ₹999
+
+                    </h1>
+
+                    <button onclick="buy4()"
+                        class="bg-blue-600 hover:bg-blue-700 text-white px-5 py-2 rounded-lg">
+
+                        Buy Now
+
+                    </button>
+
+                </div>
+
+            </div>
+
+    
+       <div  class="bg-white rounded-2xl shadow-lg p-5 hover:-translate-y-3 hover:shadow-2xl transition duration-500">
+
+                <img src="jen.jpg"
+                    class="rounded-xl w-full h-56 flex-shrink-0 object-cover">
+
+                <h2 class="text-2xl font-bold mt-5 text-gray-800 product5">
+
+                    Denim Jeans
+
+                </h2>
+
+                <p class="text-gray-600 mt-3 leading-7">
+
+                    Comfortable slim-fit denim jeans for women.
+
+                </p>
+
+                <div class="flex justify-between items-center mt-6">
+
+                    <h1 class="text-2xl font-bold text-pink-500">
+
+                        ₹1799
+
+                    </h1>
+
+                    <button onclick="buy5()"
+                        class="bg-green-600 hover:bg-green-700 text-white px-5 py-2 rounded-lg">
+
+                        Buy Now
+
+                    </button>
+
+                </div>
+
+            </div>
+
+            <!-- PRODUCT 6 -->
+
+            <div
+                class="bg-white rounded-2xl shadow-lg p-5 hover:-translate-y-3 hover:shadow-2xl transition duration-500">
+
+                <img src="wat.jpg"
+                    class="rounded-xl w-full h-56 flex-shrink-0 object-cover">
+
+                <h2 class="text-2xl font-bold mt-5 text-gray-800 product6">
+
+                    Luxury Watch
+
+                </h2>
+
+                <p class="text-gray-600 mt-3 leading-7">
+
+                    Premium luxury watch with elegant design.
+
+                </p>
+
+                <div class="flex justify-between items-center mt-6">
+
+                    <h1 class="text-2xl font-bold text-pink-500">
+
+                        ₹3499
+
+                    </h1>
+
+                    <button onclick="buy6()"
+                        class="bg-red-600 hover:bg-red-700 text-white px-5 py-2 rounded-lg">
+
+                        Buy Now
+
+                    </button>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+</div>
+ <script>
+
+    let index = 0;
+
+    const slider =
+        document.getElementById("slider");
+
+    function nextSlide() {
+
+        index++;
+
+        slider.style.transform =
+            `translateX(-${index * 370}px)`;
+
+
+        // Reset Slider
+
+        if (index >= 6) {
+
+            index = 0;
+
+            slider.style.transform =
+                `translateX(0px)`;
+
+        }
+
+    }
+
+
+    // Auto Slide
+
+    setInterval(nextSlide, 1500);
+
+</script>
+ <!-- ================= FOOTER ================= -->
+
+    <footer class="bg-black text-white text-center py-10 mt-16">
+
+        <h1 class="text-3xl font-bold">
+            FashionHub
+        </h1>
+
+        <p class="mt-3 text-gray-400">
+
+            Modern E-Commerce Fashion Store
+
+        </p>
+
+        <div class="flex justify-center gap-6 mt-5">
+
+            <a href="#" class="hover:text-pink-400">
+                Facebook
+            </a>
+
+            <a href="#" class="hover:text-pink-400">
+                Instagram
+            </a>
+
+            <a href="#" class="hover:text-pink-400">
+                Twitter
+            </a>
+
+        </div>
+
+    </footer>
+
+    <!-- ================= JAVASCRIPT ================= -->
+
+    <script>
+
+        function buy1() {
+
+            let product =
+                document.querySelector(".product1").innerText;
+
+            alert(product + " added to cart");
+
+        }
+
+        function buy2() {
+
+            let product =
+                document.querySelector(".product2").innerText;
+
+            alert(product + " added to cart");
+
+        }
+
+        function buy3() {
+
+            let product =
+                document.querySelector(".product3").innerText;
+
+            alert(product + " added to cart");
+
+        }
+
+        function buy4() {
+
+            let product =
+                document.querySelector(".product4").innerText;
+
+            alert(product + " added to cart");
+
+        }
+
+        function buy5() {
+
+            let product =
+                document.querySelector(".product5").innerText;
+
+            alert(product + " added to cart");
+
+        }
+
+        function buy6() {
+
+            let product =
+                document.querySelector(".product6").innerText;
+
+            alert(product + " added to cart");
+
+        }
+
+    </script>
+</body>
+</html>

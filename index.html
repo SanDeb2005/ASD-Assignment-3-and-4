@@ -1,0 +1,182 @@
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>FashionHub</title>
+
+    <link rel="stylesheet" href="./src/output.css">
+
+</head>
+
+<body class="bg-gray-100 scroll-smooth">
+
+    <!-- NAVBAR -->
+
+    <nav class="bg-gradient-to-r from-pink-500 to-purple-600 text-white shadow-lg sticky top-0 z-50">
+
+        <div class="max-w-7xl mx-auto px-5 py-4 flex justify-between items-center">
+
+            <h1 class="text-3xl font-bold">
+                FashionHub
+            </h1>
+             <ul class="hidden md:flex gap-8 text-lg items-center">
+
+                <li><a href="index.html" class="hover:text-gray-200">Home</a></li>
+                <li><a href="products.html" class="hover:text-gray-200">Products</a></li>
+                <li><a href="contact.html" class="hover:text-gray-200">Contact</a></li>
+                <li><a href="cart.html" class="hover:text-gray-200">Cart</a></li>
+
+                <button class="bg-black px-5 py-2 rounded-xl hover:bg-gray-800" id="darkBtn">
+                    Dark Mode
+                </button>
+
+            </ul>
+
+        </div>
+
+    </nav>
+<!-- HERO SECTION -->
+
+    <section class="bg-white py-20">
+
+        <div class="max-w-7xl mx-auto px-5 flex flex-col md:flex-row items-center gap-10">
+
+            <div class="w-full md:w-1/2">
+
+                <h1 class="text-5xl md:text-6xl font-bold text-gray-800 leading-tight" id="heroText">
+                    Discover
+                    <span class="text-pink-500">
+                        Modern Fashion
+                    </span>
+                </h1>
+
+                <p class="text-gray-600 mt-6 text-lg leading-8">
+                    Upgrade your style with our latest fashion collection.
+                </p>
+                <div class="flex gap-4 mt-8 flex-wrap">
+
+                    <a href="products.html"
+                        class="bg-pink-500 hover:bg-pink-600 text-white px-8 py-4 rounded-xl text-lg">
+                        Shop Now
+                    </a>
+
+                    <button onclick="changeText()"
+                        class="bg-black hover:bg-gray-800 text-white px-8 py-4 rounded-xl text-lg">
+                        Explore
+                    </button>
+
+                </div>
+
+            </div>
+
+            <div class="w-full md:w-1/2">
+
+                <img src="fas.jpg"
+                    class="rounded-2xl shadow-xl w-full">
+
+            </div>
+             </div>
+
+    </section>
+    <!-- ================= FASHION SLIDER ================= -->
+
+<section class="max-w-7xl mx-auto px-5 py-16">
+
+    <div class="text-center mb-10">
+
+        <h1 class="text-4xl font-bold text-pink-500">
+            Trending Fashion
+        </h1>
+
+        <p class="text-gray-600 mt-4 text-lg">
+            Explore our latest trendy collections
+        </p>
+
+    </div>
+
+
+
+    <!-- FEATURES -->
+
+    <section class="max-w-7xl mx-auto px-5 py-16">
+
+        <div class="text-center mb-12">
+
+            <h1 class="text-4xl font-bold text-pink-500">
+                Why Choose Us
+            </h1>
+
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+
+            <div class="bg-white p-8 rounded-2xl shadow-lg text-center hover:-translate-y-2 transition duration-500">
+
+                <h2 class="text-2xl font-bold mb-4">
+                    Premium Quality
+                </h2>
+                 <p class="text-gray-600">
+                    Best quality fashion products for daily use.
+                </p>
+
+            </div>
+
+            <div class="bg-white p-8 rounded-2xl shadow-lg text-center hover:-translate-y-2 transition duration-500">
+
+                <h2 class="text-2xl font-bold mb-4">
+                    Free Delivery
+                </h2>
+
+                <p class="text-gray-600">
+                    Free shipping on all orders above ₹999.
+                </p>
+
+            </div>
+              <div class="bg-white p-8 rounded-2xl shadow-lg text-center hover:-translate-y-2 transition duration-500">
+
+                <h2 class="text-2xl font-bold mb-4">
+                    Secure Payment
+                </h2>
+
+                <p class="text-gray-600">
+                    100% secure payment gateway available.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- FOOTER -->
+
+    <footer class="bg-black text-white text-center py-10 mt-10">
+
+        <h1 class="text-3xl font-bold">
+            FashionHub
+        </h1>
+
+        <p class="mt-3 text-gray-400">
+            Modern Fashion E-Commerce Website
+        </p>
+
+    </footer>
+
+    <script>
+
+        function changeText() {
+            document.getElementById("heroText").innerText = "Latest Fashion Collection Available";
+        }
+ document.getElementById("darkBtn").addEventListener("click", function () {
+            document.body.classList.toggle("bg-gray-900");
+            document.body.classList.toggle("text-white");
+        });
+
+    </script>
+
+</body>
+
+</html>
